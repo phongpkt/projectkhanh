@@ -1,0 +1,70 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+    <div class="container col-md-6 mt-3">
+        <h2 class="text-center">ADD NEW ORDER</h2>
+        <div class="col md-6">
+            {{ form_start (orderForm) }}
+            <div class="form-group">
+                {{ form_label (orderForm.date) }}
+                {{ form_widget (orderForm.date,
+                    {
+                        'attr' : {'class' : 'form-control'}
+                    })
+                }}
+            </div>
+            <div class="form-group">
+                {{ form_label (orderForm.quantity) }}
+                {{ form_widget (orderForm.quantity,
+                    {
+                        'attr' : {'class' : 'form-control'}
+                    })
+                }}
+            </div>
+            <div class="form-group">
+                {{ form_label (orderForm.location) }}
+                {{ form_widget (orderForm.location,
+                    {
+                        'attr' : {'class' : 'form-control'}
+                    })
+                }}
+            </div>
+            <div class="form-group">
+                {{ form_label (orderForm.status) }}
+                {{ form_widget (orderForm.status,
+                    {
+                        'attr' : {'class' : 'form-control'}
+                    })
+                }}
+            </div>
+            <div class="form-group">
+                {{ form_label (orderForm.customer) }}
+                {{ form_widget (orderForm.customer,
+                    {
+                        'attr' : {'class' : 'form-control'}
+                    })
+                }}
+            </div>
+            <div class="form-group">
+                {{ form_label (orderForm.product) }}
+                {{ form_widget (orderForm.product,
+                    {
+                        'attr' : {'class' : 'form-control'}
+                    })
+                }}
+            </div>
+            <div class="form-group">
+                {{ form_label (orderForm.employee) }}
+                {{ form_widget (orderForm.employee,
+                    {
+                        'attr' : {'class' : 'form-control'}
+                    })
+                }}
+            </div>
+            <div class="form-gourp text-center mt-3">
+                <input type="submit" class="btn btn-primary"></input>
+            </div>
+            {{ form_end (orderForm) }}
+        </div>
+    </div>
+{% endblock %}

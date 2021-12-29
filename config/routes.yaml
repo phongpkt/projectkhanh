@@ -1,0 +1,7 @@
+category_add:
+    path: /category/add
+    controller: App\Controller\CategoryController::categoryAdd
+
+category_edit: 
+    path: /category/edit/{id}
+    controller: App\Controller\CategoryController::categoryEdit
